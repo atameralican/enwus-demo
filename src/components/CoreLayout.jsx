@@ -1,0 +1,56 @@
+import routes from "../routes";
+import Footer from "../components/Footer";
+import profilePicture from "../assets/images/logo-kucuk-beyaz.webp";
+import defaultBanner from "../assets/images/home-page/banner-kucuk.webp";
+import Navbar from "./Navbar";
+import "../assets/styles/core-layout.css";
+const CoreLayout = ({
+  bannerImg,
+  children,
+  bannerTitle,
+  bannerText,
+  bannerKucuk,
+  bannerAlt,
+}) => {
+  return (
+    <>
+      {/* NAVBAR */}
+      <Navbar routes={routes} />
+      {/* BANNER */}
+      <section className="banner position-relative text-center d-flex align-items-center justify-content-center">
+        <img
+          src={bannerKucuk || bannerImg || defaultBanner}
+          sizes="100vw"
+          srcSet={`
+    ${bannerKucuk || bannerImg || defaultBanner} 1200w,
+    ${bannerImg || defaultBanner} 1920w
+  `}
+          alt={bannerAlt??"Atamer Mechanical Engineering"}
+          className="img-fluid banner-img"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div className="banner-overlay "></div> 
+        <div className="banner-content text-white">
+          <h1 className="mt-5 mb-3 banner-h1">{bannerTitle ?? "İnovatif Mühendislik, Güvenilir Çözümler"}</h1>
+         {bannerText?<div className="d-flex justify-content-center align-items-center">
+            <h2 className="banner-h2">{bannerText}</h2>
+          </div>:<img
+            src={profilePicture}
+            alt="Atamer Mechanical Engineering"
+            className="rounded-circle shadow-lg"
+            style={{ width: "110px", height: "110px", objectFit: "cover" }}
+            loading="lazy"
+          />} 
+        </div>
+      </section>
+
+      {/* İÇERİK */}
+      <div className="page-card">{children}</div>
+{/* footer */}
+      <Footer />
+    </>
+  );
+};
+
+export default CoreLayout;
