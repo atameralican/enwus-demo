@@ -9,7 +9,7 @@ import { SiLinkedin } from "react-icons/si";
         <div className="row text-secondary">
           <div className="col-12 col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
             <h3 className="footer-h3">
-              <strong>ATAMER MECHANICAL ENGINEERING</strong>
+              <strong>ATAMER ENGINEERING</strong>
             </h3>
             <div className="mt-3">
               <nav aria-label="Ana Menü">
@@ -24,7 +24,7 @@ import { SiLinkedin } from "react-icons/si";
                   </li>
                   <li className="me-3">
                     <Link
-                      to="/hakkimizda"
+                      to="/about-us"
                       className="text-decoration-none text-muted fw-normal"
                     >
                       Hakkımızda
@@ -32,20 +32,37 @@ import { SiLinkedin } from "react-icons/si";
                   </li>
                   <li className="me-3">
                     <Link
-                      to="/kataloglar"
+                      to="/arge"
+                      className="text-decoration-none text-muted fw-normal"
+                    >
+                      Arge
+                    </Link>
+                  </li>
+                  <li className="me-3">
+                    <Link
+                      to="/defense-industry"
+                      className="text-decoration-none text-muted fw-normal"
+                    >
+                      Savunma San.
+                    </Link>
+                  </li>
+                  <li className="me-3">
+                    <Link
+                      to="/manufacturing"
+                      className="text-decoration-none text-muted fw-normal"
+                    >
+                      İmalat San.
+                    </Link>
+                  </li>
+                  <li className="me-3">
+                    <Link
+                      to="/catalogs"
                       className="text-decoration-none text-muted fw-normal"
                     >
                       Kataloglar
                     </Link>
                   </li>
-                  <li className="me-3">
-                    <Link
-                      to="/iletisim"
-                      className="text-decoration-none text-muted fw-normal"
-                    >
-                      İletişim
-                    </Link>
-                  </li>
+                  
                 </ul>
               </nav>
             </div>
@@ -57,7 +74,7 @@ import { SiLinkedin } from "react-icons/si";
 
           <div className="col-12 col-lg-6 ms-lg-auto text-center text-lg-end">
             <h3 className="mb-5 footer-h3">
-              <strong>Endüstriyel Üretimin Güvenilir Ortağı</strong>
+              <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong>
             </h3>
 
            <a
@@ -65,11 +82,11 @@ import { SiLinkedin } from "react-icons/si";
   target="_blank"
   rel="noopener noreferrer"
   class="text-secondary"
-  title="Atamer Mechanical Engineering Linkedin Sayfası"
-  aria-label="Atamer Mechanical Engineering LinkedIn Sayfası"
+  title="Atamer Engineering Linkedin Sayfası"
+  aria-label="Atamer Engineering LinkedIn Sayfası"
 >
   <SiLinkedin className="me-1" />
-  Atamer Mechanical Engineering
+  Atamer Engineering
 </a>
           </div>
         </div>

@@ -1,0 +1,8 @@
+<svg width="75" height="80" viewBox="0 0 75 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sol Çubuk (Orta Mavi) -->
+  <rect x="10" y="15" width="15" height="50" fill="#2563EB" rx="4"/>
+  <!-- Orta Çubuk (Açık Mavi - Kısa Olan) -->
+  <rect x="30" y="15" width="15" height="35" fill="#60A5FA" rx="4"/>
+  <!-- Sağ Çubuk (Koyu Mavi) -->
+  <rect x="50" y="15" width="15" height="50" fill="#1E40AF" rx="4"/>
+</svg>

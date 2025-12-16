@@ -6,7 +6,7 @@ const ImgCardComponent = ({
   title,
   description,
   image,
-  imageKucuk,
+  imageSmall,
   link,
   onClick,
   label,
@@ -25,9 +25,9 @@ const ImgCardComponent = ({
               className=""
             >
       <img
-        src={imageKucuk}
+        src={imageSmall}
         srcSet={`
-    ${imageKucuk ?? image} 1200w,
+    ${imageSmall ?? image} 1200w,
     ${image} 1920w
   `}
         alt={title}

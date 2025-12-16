@@ -1,7 +1,7 @@
 import routes from "../routes";
 import Footer from "../components/Footer";
-import profilePicture from "../assets/images/logo-kucuk-beyaz.webp";
-import defaultBanner from "../assets/images/home-page/banner-kucuk.webp";
+import profilePicture from "../assets/images/logo-small.svg";
+import defaultBanner from "../assets/images/home-page/banner-small.webp";
 import Navbar from "./Navbar";
 import "../assets/styles/core-layout.css";
 const CoreLayout = ({
@@ -9,7 +9,7 @@ const CoreLayout = ({
   children,
   bannerTitle,
   bannerText,
-  bannerKucuk,
+  bannerSmall,
   bannerAlt,
 }) => {
   return (
@@ -19,13 +19,13 @@ const CoreLayout = ({
       {/* BANNER */}
       <section className="banner position-relative text-center d-flex align-items-center justify-content-center">
         <img
-          src={bannerKucuk || bannerImg || defaultBanner}
+          src={bannerSmall || bannerImg || defaultBanner}
           sizes="100vw"
           srcSet={`
-    ${bannerKucuk || bannerImg || defaultBanner} 1200w,
+    ${bannerSmall || bannerImg || defaultBanner} 1200w,
     ${bannerImg || defaultBanner} 1920w
   `}
-          alt={bannerAlt??"Atamer Mechanical Engineering"}
+          alt={bannerAlt??"Atamer Engineering"}
           className="img-fluid banner-img"
           fetchpriority="high"
           decoding="async"
@@ -37,7 +37,7 @@ const CoreLayout = ({
             <h2 className="banner-h2">{bannerText}</h2>
           </div>:<img
             src={profilePicture}
-            alt="Atamer Mechanical Engineering"
+            alt="Atamer Engineering"
             className="rounded-circle shadow-lg"
             style={{ width: "110px", height: "110px", objectFit: "cover" }}
             loading="lazy"

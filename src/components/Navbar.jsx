@@ -37,9 +37,9 @@ const Navbar = ({ routes }) => {
           <NavLink
             className="navbar-brand text-secondary"
             to="/"
-            aria-label="Atamer Mechanical Engineering Ana Sayfa"
+            aria-label="Atamer Engineering Ana Sayfa"
           >
-            Atamer Mechanical Engineering
+            Atamer Engineering
           </NavLink>
 
           {/* Hamburger Menu Button */}

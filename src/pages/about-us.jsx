@@ -6,7 +6,7 @@ const AboutUsPage = () => {
         <div className="container">
           <div className="hero-content col-md-8 text-justify text-primary-emphasis lh-base fw-light">
             <h2 className="mb-3 fw-bold text-md-start text-center text-primary-emphasis ">
-              Endüstriyel Üretimin Güvenilir Ortağı
+              Hakkımızda
             </h2>
             <p className="fw-bold ">
               Aorem Ipsum is simply dummy text of the printing and typesetting

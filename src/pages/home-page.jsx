@@ -2,10 +2,10 @@ import CoreLayout from "../components/CoreLayout";
 import ImgCardComponent from "../components/ImgCardComponent";
 //photos
 import arge from "../assets/images/home-page/arge.webp";
-import talasli from "../assets/images/home-page/talasli.webp";
-import savunma from "../assets/images/home-page/savunma1.webp";
+import manufacturing from "../assets/images/home-page/manufacturing.webp";
+import defense from "../assets/images/home-page/defense.webp";
 import banner from "../assets/images/home-page/banner.webp";
-import banner_kucuk from "../assets/images/home-page/banner-kucuk.webp";
+import banner_sm from "../assets/images/home-page/banner-small.webp";
 const HomePage = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const HomePage = () => {
         bannerImg={banner}
         bannerTitle="What is Lorem Ipsum?"
         bannerText="What is Lorem Ipsum?"
-        bannerKucuk={banner_kucuk}
+        bannerSmall={banner_sm}
         bannerAlt="What is Lorem Ipsum? - Home Page"
       >
         <div className="container mt-3 mb-3">
@@ -77,18 +77,18 @@ const HomePage = () => {
             </div>
             <div className="col-lg-4 col-md-6">
               <ImgCardComponent
-                title="Imalat"
+                title="İmalat"
                 description="Vestibulum eget enim id augue interdum vulputate a ac sem"
-                image={talasli}
-                link="/imalat"
+                image={manufacturing}
+                link="/imalat-sanayi"
               />
             </div>
             <div className="col-lg-4 col-md-6">
               <ImgCardComponent
-                title="Savunma Sanayi"
+                title="defense Sanayi"
                 description="Phasellus hendrerit mauris et purus scelerisque cursus ac a metus."
-                image={savunma}
-                link="/savunma-sanayi"
+                image={defense}
+                link="/defense-sanayi"
               />
             </div>
           </div>

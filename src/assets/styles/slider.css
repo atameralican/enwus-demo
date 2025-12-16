@@ -1,0 +1,24 @@
+/*SLIDER IMG*/
+.slider-image-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+  /* arka plan yükleneceği kadar siyah */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.slider-image-wrapper {
+  min-height: 20.625rem;
+  /* eski card yüksekliğini koruyor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
