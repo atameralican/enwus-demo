@@ -1,18 +1,84 @@
-# React + Vite
+# ENWUS Demo 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🌐 **Live Demo:** https://enwus-demo.vercel.app/  
+📦 **Repository:** https://github.com/atameralican/enwus-demo
 
-Currently, two official plugins are available:
+ENWUS Demo, modern frontend ihtiyaçlarını hedefleyen;  
+**harita, PDF görüntüleme, carousel, lazy loading ve merkezi routing mimarisi** vb. teknolojileri içeren bir React projesidir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ Teknoloji Stack
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### ⚙️ Core
+- **React 19**
+- **React Router DOM v7**
+- **Vite**
+- **JavaScript (ES6+)**
 
-Note: This will impact Vite dev & build performances.
+### 🎨 UI & UX
+- **Bootstrap 5**
+- **React Bootstrap**
+- **React Icons**
+- **React Slick / Slick Carousel**
 
-## Expanding the ESLint configuration
+### 🗺️ Map & Media
+- **Leaflet**
+- **React Leaflet**
+- **@react-pdf-viewer/core**
+- **pdfjs-dist**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔍 Code Quality
+- **ESLint**
+- **React Hooks linting**
+- **Modern module-based yapı (ESM)**
+
+### ☁️ Deployment
+- **Vercel**
+
+---
+
+## 🧱 Mimari & Teknik Yaklaşım
+
+### 🔹 Routing Mimarisi
+- Route’lar merkezi bir `routes` konfigürasyonu üzerinden yönetilir
+- Dinamik ve genişletilebilir route yapısı
+- 404 yönlendirmeleri ve default route kontrolü
+
+### 🔹 Layout Pattern
+- Tüm sayfalar ortak bir **CoreLayout** ile sarılmıştır
+- Route bazlı:
+  - Banner görseli
+  - Başlık
+  - Açıklama metni
+  - Küçük başlık (subtitle) desteği
+
+### 🔹 Performans
+- `React.lazy` + `Suspense` ile **sayfa bazlı lazy loading**
+- Özel loading ekranı (Bootstrap spinner’ları ile)
+- Code splitting
+
+### 🔹 UX İyileştirmeleri
+- Route değişimlerinde otomatik scroll reset
+- Responsive tasarım
+- Harita ve PDF gibi ağır bileşenlerin kontrollü yüklenmesi
+
+---
+
+## 🚀 Local Çalıştırma
+
+```bash
+git clone https://github.com/atameralican/enwus-demo.git
+cd enwus-demo
+npm install
+npm run dev
+
+👤 Geliştirici
+
+Alican Atamer
+Frontend Developer
+
+GitHub: https://github.com/atameralican
+
+Linkedin: https://www.linkedin.com/in/alican-atamer/
+
