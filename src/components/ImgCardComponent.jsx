@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/styles/img-card-components.css";
+import "../assets/styles/img-card-components.css"
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const ImgCardComponent = ({
